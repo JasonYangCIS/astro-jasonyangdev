@@ -17,6 +17,6 @@ All commands are run from the root of the project, from a terminal:
 
 [Astro documentation](https://docs.astro.build).
 
-## GCP deploy commands cause I'll forget
-`gcloud storage rm -r gs://www.jasonyangdev.com/**`
-`gcloud storage cp -r .\dist/* gs://www.jasonyangdev.com`
+## GCP deploy
+Must be authenticated with gcloud. Will clear the bucket and cp locally built files to `gs://www.jasonyangdev.com`
+`npm run deploy`

@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && gcloud storage rm -r gs://www.jasonyangdev.com/** && gcloud storage cp -r ./dist/* gs://www.jasonyangdev.com"
   },
   "dependencies": {
     "astro": "^5.16.6"
